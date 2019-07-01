@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/vue"></script>
+    <!-- Import the Vue.js libaray by CDN or download it -->
+    <!-- Vue is also available on 'unpkg' and 'cdnjs' (cdnjs takes some time to sync so the latest release may not be available yet). -->
+</head>
+
+<body>
+    <div id="app">
+        <h2>v-if</h2>
+        <span v-if="seen">Now you see me</span>
+        <div v-else>Not me</div>
+
+        <h2>v-model</h2>
+        <input type="text" v-model="message">
+        <div class="hi">{{message}}</div>
+
+        <h2>v-for</h2>
+        <ul>
+            <li v-for="color in colors">
+                <!-- for Array data -->
+                {{color}}
+            </li>
+        </ul>
+        <h2>---------</h2>
+        <ul>
+            <!-- "@" === "v-on:" -->
+            <li v-for="home in homes" v-on:click="myFa(home.father)">
+                <!-- for Object data -->
+                {{home.father}}
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
