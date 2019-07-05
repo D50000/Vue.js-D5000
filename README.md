@@ -49,8 +49,7 @@ Local Component:
 			// register scoped component.
 			'my-component': {
 				template: '<div class="component">A custom component of Vue!</div>'
-			},
-			C2
+			}
 		}
 	});
 ```
@@ -69,4 +68,23 @@ Global Component:
 	});
 ```
 
-## 7- data-function
+## 07- data-function
+daclare a Component with it's data.
+```
+// register
+Vue.component('my-component', {
+	template: '<div class="component">{{ msg }}</div>',
+	data: function() {
+		return {
+			// Component data need to be a function return.
+			// Need to return it in a minima function scope.
+			msg: 'A custom component of Vue!'
+		}
+	}
+});
+```
+
+## 08- props
+ - transfer the data from parent to child component.
+ - props data type validation check.
+
