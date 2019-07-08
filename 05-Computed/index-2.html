@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <div id="demo">
+        <h1>Latest Vue.js Commits</h1>
+        <template v-for="branch in branches">
+            <input type="radio" :value="branch" v-model="currentBranch"> {{ branch }}
+            <!-- :value => v-blind:value -->
+        </template>
+        <p>vuejs/vue@{{ currentBranch }}</p>
+        <ul>
+            <li v-for="record in commits">
+                <a :href="record.html_url" target="_blank" class="commit">更新紀錄</a>
+                - by
+                <span class="author">
+                    <a :href="record.author.html_url" target="_blank">{{ record.commit.author.name }}</a>
+                </span>
+                at
+                <span class="date">{{ record.commit.author.date }}</span>
+            </li>
+        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+        <script src="javascript-2.js"></script>
+    </div>
+</body>
+
+</html>
