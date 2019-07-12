@@ -88,3 +88,22 @@ Vue.component('my-component', {
  - transfer the data from parent to child component.
  - props data type validation check.
 
+## 09- one-way data flow
+ - To avoid the two-way data flow that update the parent's data.
+ - Use the `.$parent.$emit()` event to update parent's data in the one-way data flow condition.
+
+## 10- event bus
+ - To organize the events into the single object.
+ - It can improve the process of the data updating in the complex node tree.
+
+## 11- Dynamic components
+ - It will remove the DOM and create new one.
+ - Use `keep alive` tag to cache the element data props.
+
+## 12- Compilation Scope
+ - `slot` tag can compile the input data from parent.
+ - `Slot` with name, if multiple slots.
+
+## 13- What is VUE file
+ - Sigle file for "App.vue" project.
+ - Need to compile the App.vue with web-pack and vue-loader.
