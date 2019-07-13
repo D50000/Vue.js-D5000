@@ -1,0 +1,52 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
+  <title>Component</title>
+  <style>
+    #app {
+      margin: 1em;
+      font-size: 1.2em;
+    }
+    .component {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app">
+    <div>count of parent: {{ counts }}</div>
+    <br>
+    <my-component :count="counts"></my-component>
+    <my-component :count="counts"></my-component>
+    <my-component :count="counts"></my-component>
+    <my-component :count="counts"></my-component>
+    <my-component :count="counts"></my-component>
+  </div>
+
+  <script>
+    Vue.component('my-component', {
+      template: '<div class="component"> <span> {{ c }}</span> - <button @click="c++">add</button></div>',
+      props: ["count"],
+      data() {
+        return {
+          c: this.count.num
+          // One-way data flow to unbind the parent data.
+        }
+      }
+    });
+    new Vue({
+      el: '#app',
+      data:{
+        counts: {
+          num: 0
+        }
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>
