@@ -105,5 +105,5 @@ Vue.component('my-component', {
  - `Slot` with name, if multiple slots.
 
 ## 13- What is VUE file
- - Sigle file for "App.vue" project.
- - Need to compile the App.vue with web-pack and vue-loader.
+ - Sigle file for `App.vue` project.
+ - Need to compile the App.vue with `web-pack` and `vue-loader`.
