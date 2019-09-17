@@ -107,3 +107,17 @@ Vue.component('my-component', {
 ## 13- What is VUE file
  - Sigle file for `App.vue` project.
  - Need to compile the App.vue with `web-pack` and `vue-loader`.
+
+## 14- VUE CLI
+A bundle of tools that increase develop process for Vue project.
+`gulp`(Task runner) vs `Webpack`(module bundler)
+
+## 15- VUE CLI setup
+1. Download node.js and check the version `nmp -v`.  
+2. Import VUE CLI `npm install -g vue-cli`.
+
+## 16- VUE CLI data structure and run command
+- `npm run dev` will auto start up the localhost server.
+- `npm run build` will compress all the code and element to `dist` folder for production. 
+
+## 17- VUE webpack project
