@@ -113,7 +113,7 @@ A bundle of tools that increase develop process for Vue project.
 `gulp`(Task runner) vs `Webpack`(module bundler)
 
 ## 15- VUE CLI setup
-1. Download node.js and check the version `nmp -v`.  
+1. Download node.js and check the version `npm -v`.  
 2. Import VUE CLI `npm install -g vue-cli`.
 
 ## 16- VUE CLI data structure and run command
