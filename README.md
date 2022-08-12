@@ -2,16 +2,19 @@
 
 VUE Object.defineProperty will watch the update of the data.  
 When data change it will auto rerender the browsers.  
-**Vue Official tutorial** [https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance](https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance)
+[**Vue Official tutorial**](https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance)
 
-watch data(tree) implementation  
+**Watch Data(Tree) Implementation**  
 **Angular:** 1 Pull  
 **React:** Pull, onPush  
 **vue:** Push-based (single node)
 
-**j-query DOM:** elemets trigger data.  
-**vue, Angular, react:** data tigger events.  
-Vue does not support IE8 and below, because it uses ECMAScript 5 features that are un-shimmable in IE8. However it supports all ECMAScript 5 compliant browsers.[https://vuejs.org/v2/guide/installation.html](https://vuejs.org/v2/guide/installation.html) [https://scrimba.com/playlist/pXKqta](https://scrimba.com/playlist/pXKqta)
+**Data Update Concept**  
+**j-query DOM:** elements trigger data.  
+**vue, Angular, react:** data trigger events.  
+Vue does not support IE8 and below, because it uses ECMAScript 5 features that are un-shimmable in IE8. However it supports all ECMAScript 5 compliant browsers.
+- [vue3 document](https://vuejs.org/v2/guide/installation.html)
+- [Vue documentation guide](https://scrimba.com/playlist/pXKqta)
 
 ## 01- Setup Vue.js
 
