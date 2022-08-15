@@ -30,7 +30,7 @@ Import the Vue.js library by CDN or download it.
 **`v-bind`** bind for html tag or css style
 
 - `v-bind` shorthand **`:`**
-- `@` shorthand `v-on:`
+- `v-on:` shorthand `@`
 
 ## 03- What is `this`
 
