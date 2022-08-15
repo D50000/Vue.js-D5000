@@ -9,17 +9,18 @@ When data change it will auto rerender the browsers.
 **React:** Pull, onPush  
 **vue:** Push-based (single node)
 
-**Data Update Concept**  
+**Data Update Concept**
 **j-query DOM:** elements trigger data.  
 **vue, Angular, react:** data trigger events.  
 Vue does not support IE8 and below, because it uses ECMAScript 5 features that are un-shimmable in IE8. However it supports all ECMAScript 5 compliant browsers.
+
 - [vue3 document](https://vuejs.org/v2/guide/installation.html)
 - [Vue documentation guide](https://scrimba.com/playlist/pXKqta)
 
 ## 01- Setup Vue.js
 
-Import the Vue.js libaray by CDN or download it.
-`<script src="https://unpkg.com/vue"></script>`
+Import the Vue.js library by CDN or download it.  
+`<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>`
 
 ## 02- Directives
 
@@ -49,6 +50,7 @@ ps: [https://github.com/kurotanshi/hexschool-vue/blob/master/06-lifecycle-hooks.
 ## 06- Web Component
 
 Local Component:
+
 ```
 	new  Vue({
 		el: '#app',
@@ -63,6 +65,7 @@ Local Component:
 ```
 
 Global Component:
+
 ```
 	// Register for global component.
 	Vue.component('my-component', {
@@ -80,6 +83,7 @@ Global Component:
 ## 07- data-function
 
 daclare a Component with it's data.
+
 ```
 // register
 Vue.component('my-component', {
