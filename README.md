@@ -24,12 +24,15 @@ Import the Vue.js library by CDN or download it.
 
 ## 02- Directives
 
-**"v-if" "v-for"** one-way binding  
-**"v-model"** two-way binding  
-**"v-on"** methods  
-**"v-bind"** bind for html tag or css style ("v-bind" shorthand **":"**)
+**`v-if` `v-for`** one-way binding  
+**`v-model`** two-way binding  
+**`v-on`** methods  
+**`v-bind`** bind for html tag or css style
 
-## 03- What is "this"
+- `v-bind` shorthand **`:`**
+- `@` shorthand `v-on:`
+
+## 03- What is `this`
 
 The "**object**" that currently is the parent of the function.
 
