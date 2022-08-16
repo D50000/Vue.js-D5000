@@ -38,11 +38,16 @@ The "**object**" that currently is the parent of the function.
 
 ## 04- VUE-Lifecycle
 
-**beforeCreate  
-created  
-beforeMount  
-mounted**  
-ps: [https://github.com/kurotanshi/hexschool-vue/blob/master/06-lifecycle-hooks.html](https://github.com/kurotanshi/hexschool-vue/blob/master/06-lifecycle-hooks.html)
+- **`beforeCreate`**
+- **`created`**
+- **`beforeMount`**
+- **`mounted`**
+- **`beforeUpdate`**
+- **`update`**
+- **`beforeUnmount`**
+- **`unmount`**  
+  ![](https://github.com/D50000/Vue.js-D5000/blob/main/asset/vue_lifecycle.png)
+  ps: [lifecycle-hooks](https://github.com/kurotanshi/hexschool-vue/blob/master/06-lifecycle-hooks.html)
 
 ## 05- Computed & watch
 
@@ -147,3 +152,7 @@ A bundle of tools that increase develop process for Vue project.
 - `npm run build` will compress all the code and element to `dist` folder for production.
 
 ## 17- VUE webpack project
+
+### Reference
+
+[Vue Doc](https://vuejs.org/guide/introduction.html)
