@@ -51,9 +51,9 @@ The "**object**" that currently is the parent of the function.
 
 ## 05- Computed & watch
 
-**computed** => Auto run when the data update.( data, component, props)  
 **methods** => Run when has been call, whatever the data is different or not.  
-**watch** => Usually use in RWD Ajax asynchronous call for the API data has changes.
+**computed** => Auto run when the data update.( Detect `data`, `component`, `props` and cached it)  
+**watch** => Usually use in RWD Ajax asynchronous call for the API data has changes. (Change `data` base on watching some `data`, and can get the previous/new data.)
 
 ## 06- Web Component
 
