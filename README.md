@@ -59,33 +59,33 @@ The "**object**" that currently is the parent of the function.
 
 Local Component:
 
-```
-	new  Vue({
-		el: '#app',
-		components: {
-			// local scope component declaring.
-			// register scoped component.
-			'my-component': {
-				template: '<div class="component">A custom component of Vue!</div>'
-			}
-		}
-	});
+```javascript
+new Vue({
+  el: "#app",
+  components: {
+    // local scope component declaring.
+    // register scoped component.
+    "my-component": {
+      template: '<div class="component">A custom component of Vue!</div>',
+    },
+  },
+});
 ```
 
 Global Component:
 
-```
-	// Register for global component.
-	Vue.component('my-component', {
-		template: '<div class="component">A custom component of Vue!</div>'
-	});
-	// create a root instance
-	new  Vue({
-		el: '#app'
-	});
-	new  Vue({
-		el: '#app2'
-	});
+```javascript
+// Register for global component.
+Vue.component("my-component", {
+  template: '<div class="component">A custom component of Vue!</div>',
+});
+// create a root instance
+new Vue({
+  el: "#app",
+});
+new Vue({
+  el: "#app2",
+});
 ```
 
 ## 07- data-function

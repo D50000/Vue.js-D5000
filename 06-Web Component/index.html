@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
     <title>Component Registration</title>
     <style>
-        #app {
-            margin: 1em;
-            font-size: 1.2em;
-        }
+      #app {
+        margin: 1em;
+        font-size: 1.2em;
+      }
 
-        .component {
-            border: 1px solid #000;
-            padding: 10px;
-        }
+      .component {
+        border: 1px solid #000;
+        padding: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="app">
-        <my-component></my-component>
-        <C2></C2>
-        <my-component></my-component>
+      <my-component></my-component>
+      <C2></C2>
+      <my-component></my-component>
     </div>
 
-
     <script>
-        var C2 = Vue.extend({
-            template: '<div class="component">2222222</div>'
-        });
+      var C2 = Vue.extend({
+        template: '<div class="component">2222222</div>',
+      });
 
-        // create a root instance
-        new Vue({
-            el: '#app',
-            components: {
-                // local scope component declaring.
-                // register scoped component.
-                'my-component': {
-                    template: '<div class="component">A custom component of Vue!</div>'
-                },
-                C2
-            }
-        });
+      // create a root instance
+      new Vue({
+        el: "#app",
+        components: {
+          // local scope component declaring.
+          // register scoped component.
+          "my-component": {
+            template: '<div class="component">A custom component of Vue!</div>',
+          },
+          C2,
+        },
+      });
     </script>
-
-
-</body>
-
+  </body>
 </html>
