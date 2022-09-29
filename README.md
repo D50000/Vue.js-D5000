@@ -90,19 +90,19 @@ new Vue({
 
 ## 07- data-function
 
-daclare a Component with it's data.
+Declare a component with it's data.
 
-```
+```javascript
 // register
-Vue.component('my-component', {
-	template: '<div class="component">{{ msg }}</div>',
-	data: function() {
-		return {
-			// Component data need to be a function return.
-			// Need to return it in a minima function scope.
-			msg: 'A custom component of Vue!'
-		}
-	}
+Vue.component("my-component", {
+  template: '<div class="component">{{ msg }}</div>',
+  data: function () {
+    return {
+      // Component data need to be a function return.
+      // Need to return it in a minima function scope.
+      msg: "A child component in root VUE instance!",
+    };
+  },
 });
 ```
 
