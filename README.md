@@ -109,7 +109,7 @@ Vue.component("my-component", {
 ## 08- props
 
 - transfer the data from parent to child component.
-- props data type validation check.
+- props data support type validation check.
 
 ## 09- one-way data flow
 
