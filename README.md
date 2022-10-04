@@ -113,8 +113,8 @@ Vue.component("my-component", {
 
 ## 09- one-way data flow
 
-- To avoid the two-way data flow that update the parent's data.
-- Use the `.$parent.$emit()` event to update parent's data in the one-way data flow condition.
+- Avoid using the two-way data flow, it's possible to cause bugs.
+- Use the `.$parent.$emit()` event to update parent node data in the one-way data flow condition.
 
 ## 10- event bus
 
